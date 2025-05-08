@@ -31,6 +31,7 @@ services = []
         ask.en = "Public key: {ssh_public_key}"
         type = "markdown"
         bind = "/root/.ssh/id___APP___ed25519.pub"
+        help = "This is the SSH public key that needs to be declared on the remote Borg server (somewhere in an \`authorized_keys\` file, for instance), so that the local borg can connect to its remote repository"
 
         [main.general.on_calendar]
         ask.en = "When and at which frequency should the backups be performed?"
